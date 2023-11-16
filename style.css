@@ -1,0 +1,92 @@
+/* 最上部のタイトル */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+  
+    font-size: auto;
+    text-align: center;
+  
+    background-color: #454545;
+    color: #ffffff;
+}
+
+/* メッセー表示部 */
+.content {  
+    width: 100%;
+    min-height: calc(100vh - 100px);
+  
+    margin: auto;
+    padding-top: 10px;
+  
+    background-color: #ababab;
+}
+  
+  /* ID指定の先頭は「#」 */
+#chatArea {
+    overflow: scroll;
+    padding: 10px;
+  
+    list-style: none;
+}
+  
+.chatContent {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.img-circle {
+    width: 50px;
+    height: 50px;
+  
+    margin: 0 15px;
+    border-radius: 25px;
+  
+    background-color: white;
+}
+  
+  /* 最下部のメッセージ入力・送信部 */
+.footer {
+    height: auto;
+    width: auto;
+    display: block;
+    justify-content: left;
+    background-color: #454545;
+}
+.textarea{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+    
+}
+
+#uname{
+    margin-top: 5px;
+    width:auto;
+}
+
+#text{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+#send{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    font-weight: bold;
+    border: 1.5px solid #454545;
+    color: #454545;
+    transition: 0.5s;
+    }
+    
+#send:hover {
+    color: #fff;
+    background: #454545;
+}
+
